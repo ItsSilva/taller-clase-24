@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	font-family: Arial, sans-serif;
+	background-color: #313131;
+}
+
+#formulario{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#nombreTarea{
+	border: none;
+    appearance: none;
+    border-radius: 1.563rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+label{
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+	color: white;
+}
+input{
+	appearance: none;
+	border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input#estadoTarea{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: #f3f2f1;
+}
+#estadoTarea:hover {
+    background-color: #1FC4DE;
+}
+
+#estadoTarea:checked{
+    background-color: #1FC4DE;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+
+section#lista {
+	flex-direction: column;
+    display: flex;
+    align-items: center;
+	overflow: auto;
+	border: 3px solid #DE096F;
+	background-color: #313131;
+}
+
+.lista__tarea {
+    width: 50%;
+    height: 10%;
+    padding: 0.5rem;
+	overflow: auto;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #313131;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	border-radius: 1.563rem;
+	margin: 1rem;
+}
+
+.lista__tarea:hover {
+	background-color:#1FC4DE;
+	color: white;
+}
+
+
+.lista__tarea--terminada {
+	border: 3px solid #DE096F;
+}
+
+.lista__tarea--pendiente {
+	border: 3px solid #DEC91F;
+}
+
+p{
+	margin: 0.5rem;
+}
